@@ -18,7 +18,7 @@ export interface PromptosConfig {
 
 export interface ProviderConfig {
   label: string;
-  type: "openai-compatible" | "google-genai";
+  type: "openai-compatible" | "google-genai" | "anthropic";
   baseURL?: string;
   model: string;
   envKey: string;

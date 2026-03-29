@@ -11,5 +11,32 @@
     "type": "google-genai",
     "model": "gemini-2.0-flash",
     "envKey": "GEMINI_API_KEY"
+  },
+  "claude": {
+    "label": "Claude (Anthropic)",
+    "type": "anthropic",
+    "model": "claude-sonnet-4-20250514",
+    "envKey": "ANTHROPIC_API_KEY"
+  },
+  "kimi": {
+    "label": "Kimi (Moonshot)",
+    "type": "openai-compatible",
+    "baseURL": "https://api.moonshot.cn",
+    "model": "moonshot-v1-8k",
+    "envKey": "MOONSHOT_API_KEY"
+  },
+  "openrouter": {
+    "label": "OpenRouter (聚合)",
+    "type": "openai-compatible",
+    "baseURL": "https://openrouter.ai/api",
+    "model": "anthropic/claude-sonnet-4",
+    "envKey": "OPENROUTER_API_KEY"
+  },
+  "siliconflow": {
+    "label": "SiliconFlow (硅基流动)",
+    "type": "openai-compatible",
+    "baseURL": "https://api.siliconflow.cn",
+    "model": "deepseek-ai/DeepSeek-V3",
+    "envKey": "SILICONFLOW_API_KEY"
   }
 }

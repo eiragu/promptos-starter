@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { getProviders } from "./config";
 
@@ -44,6 +45,8 @@ export async function runLLM(input: RunLLMInput): Promise<RunLLMOutput> {
       return await runOpenAICompatible(cfg, apiKey, input);
     } else if (cfg.type === "google-genai") {
       return await runGoogleGenAI(cfg, apiKey, input);
+    } else if (cfg.type === "anthropic") {
+      return await runAnthropic(cfg, apiKey, input);
     } else {
       return {
         ok: false,
@@ -76,6 +79,27 @@ async function runOpenAICompatible(
   });
 
   const text = res.choices?.[0]?.message?.content ?? "";
+  return { ok: true, engineType: input.engineType, text };
+}
+
+async function runAnthropic(
+  cfg: { model: string },
+  apiKey: string,
+  input: RunLLMInput
+): Promise<RunLLMOutput> {
+  const client = new Anthropic({ apiKey });
+
+  const res = await client.messages.create({
+    model: cfg.model,
+    max_tokens: 4096,
+    messages: [{ role: "user", content: input.prompt }],
+    temperature: input.temperature ?? 0.7,
+  });
+
+  const text = res.content
+    .filter((b) => b.type === "text")
+    .map((b) => b.text)
+    .join("");
   return { ok: true, engineType: input.engineType, text };
 }
 
