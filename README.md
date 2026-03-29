@@ -21,21 +21,21 @@ Promptos Starter is a ready-to-use template for building AI content generation a
 You: "I want to build a SaaS product for small businesses"
 
 Promptos (Task Breakdown Engine):
-├── Phase 1: Market Research (Week 1-2)
+├── Phase 1: Research & Define (Day 1-3)
 │   ├── Identify target customer segments
-│   ├── Analyze 5 competing products
-│   └── Conduct 10 user interviews
-├── Phase 2: MVP Definition (Week 3)
-│   ├── Define core feature set (max 3 features)
+│   ├── Analyze 3 competing products
+│   └── Define core feature set (max 3 features)
+├── Phase 2: Design & Prototype (Day 4-6)
 │   ├── Create user flow diagrams
-│   └── Write product spec
-├── Phase 3: Development (Week 4-8)
-│   ├── Set up tech stack
+│   ├── Build clickable prototype
+│   └── Validate with 5 target users
+├── Phase 3: MVP Development (Day 7-12)
+│   ├── Set up tech stack (Next.js + Vercel)
 │   ├── Build authentication + core features
 │   └── Deploy staging environment
-└── Phase 4: Launch (Week 9-10)
-    ├── Beta testing with 20 users
-    ├── Iterate based on feedback
+└── Phase 4: Launch & Iterate (Day 13-15)
+    ├── Beta testing with 10 users
+    ├── Fix critical issues
     └── Public launch + marketing
 ```
 
