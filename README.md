@@ -343,10 +343,9 @@ Check out the complete architecture documentation: **[Promptos Architecture](htt
 
 - [x] Task Breakdown Engine (core)
 - [x] 4 built-in modules (Writing, Analysis, PM/OKR, Tech Stack)
-- [x] Multi-LLM support (DeepSeek, Gemini, OpenAI-compatible)
+- [x] Multi-LLM support (DeepSeek, Claude, Gemini, Kimi, OpenRouter, SiliconFlow)
 - [x] Visual Playground UI
 - [x] One-click Vercel deploy
-- [ ] Claude & GPT-4 native adapters
 - [ ] Streaming output support
 - [ ] Module marketplace (community prompts)
 - [ ] Pro engine tier (deeper analysis, longer output)
