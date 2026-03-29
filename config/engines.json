@@ -1,0 +1,10 @@
+{
+  "task_breakdown": {
+    "label": "Task Breakdown",
+    "labelCN": "任务拆解引擎",
+    "description": "Decompose complex goals into actionable steps",
+    "prompts": {
+      "basic": "core/task-breakdown.basic"
+    }
+  }
+}

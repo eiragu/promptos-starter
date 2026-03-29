@@ -1,0 +1,6 @@
+[
+  { "id": "writing_master", "label": "Writing Master", "labelCN": "写作大师", "category": "content", "prompt": "modules/writing-master" },
+  { "id": "problem_analysis", "label": "Problem Analysis", "labelCN": "问题拆解分析", "category": "analysis", "prompt": "modules/problem-analysis" },
+  { "id": "pm_okr", "label": "PM / OKR Planner", "labelCN": "项目规划", "category": "planning", "prompt": "modules/pm-okr" },
+  { "id": "market_insights", "label": "Market Insights", "labelCN": "市场洞察", "category": "analysis", "prompt": "modules/market-insights" }
+]

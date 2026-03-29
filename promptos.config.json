@@ -1,0 +1,12 @@
+{
+  "name": "Promptos Starter",
+  "description": "AI-powered content generation platform",
+  "defaultProvider": "deepseek",
+  "defaultTier": "basic",
+  "features": {
+    "playground": true,
+    "registry": true,
+    "coreEngines": true,
+    "modules": true
+  }
+}
