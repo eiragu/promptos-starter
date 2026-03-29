@@ -38,5 +38,12 @@
     "baseURL": "https://api.siliconflow.cn",
     "model": "deepseek-ai/DeepSeek-V3",
     "envKey": "SILICONFLOW_API_KEY"
+  },
+  "qwen": {
+    "label": "通义千问 (阿里)",
+    "type": "openai-compatible",
+    "baseURL": "https://dashscope.aliyuncs.com/compatible-mode",
+    "model": "qwen-plus",
+    "envKey": "DASHSCOPE_API_KEY"
   }
 }
